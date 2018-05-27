@@ -1,16 +1,23 @@
+/*  display for medium screens */
+
 @media only screen and (min-width: 37.5em) {
+    
   .display-small {
     display: none;
   }
+    
   .display-medium {
     display: block;
   }
+    
   .display-large {
     display: none;
-  }   
+  }  
+    
   .title {
     font-size: 3.4em;
   }
+    
   .subtitle {
     font-size: 1.8em;
   }  
@@ -28,6 +35,7 @@
     float: left;
     overflow: hidden;
   }
+    
   .main-image img {
     margin: 0 -60%;
     width: 837px;
@@ -39,5 +47,4 @@
     float: right;
     margin-left: 0.5em;
   }
-
 }
