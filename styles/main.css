@@ -1,0 +1,75 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+/* This is for the FixedHTML.html assignment, Lesson 03. */
+
+.style1 {
+    margin: 0 auto; 
+    border: 1px solid #bbb; 
+    padding: 5px; 
+    background-color: #eee; 
+    line-height: 1.5em;
+}
+
+marquee {
+    
+    animation-direction: reverse;
+    
+    
+}
+
+/* End of Lesson 03 addition. */
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: sans-serif;
+    color: darkblue;
+}
+
+aside {
+    
+    display: block;
+    float: right;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: darkblue;
+    background-color: #9db19d;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: auto;
+    padding: .5rem;
+    max-width: auto;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #9db19d;
+    color: whitesmoke;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: .5em;
+    color: aliceblue;
+    background-color: #9db19d
+}
+
