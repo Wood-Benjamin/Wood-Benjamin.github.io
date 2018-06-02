@@ -114,7 +114,19 @@ nav ul li.active a {
 nav ul li a:hover {
   background-color: #915c6c;
 }
+main {
+    
+}
 
+main figure {
+    width:93.%;
+    margin: 0;
+}
+main figure img {
+    width:100%;
+    margin: none;
+    padding: none;
+}
 .main-image {
   margin-top: 0.4em;
   width: 100%;
