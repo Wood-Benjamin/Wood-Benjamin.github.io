@@ -176,9 +176,8 @@ main {
 
 main figure {
     width:100%;
-    margin: none;
-    padding: none;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 main figure img {
     width:100%;

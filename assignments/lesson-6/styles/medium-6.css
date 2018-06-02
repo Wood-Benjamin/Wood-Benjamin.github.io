@@ -29,27 +29,29 @@
   .forecast { 
     display: block; 
   }
+main {
+    
+}
+
 main figure {
-    width:93.%;
+    width:100%;
     margin: 0;
+    padding: 0;
 }
 main figure img {
     width:100%;
     height: 15vw;
-    margin: none;
-    padding: none;
 }
-  .main-image {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-  }
-    
-  .main-image img {
-    margin: 0 -60%;
-    width: 837px;
-    height: 260px;
-  }
+.main-image {
+  margin-top: 0.4em;
+  width: 100%;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+}
+
 
   .article-image {
     width: 50%;
