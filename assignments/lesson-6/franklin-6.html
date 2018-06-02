@@ -7,10 +7,12 @@
   <meta name="author" content="Benjamin Wood">
   <meta name="description" content="Franklin City weather and forecasts.">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/normalize.css"> 
   <link rel="stylesheet" href="styles/main-6.css">
   <link rel="stylesheet" href="styles/medium-6.css">  
   <link rel="stylesheet" href="styles/large-6.css"> 
+  <script src="scripts/hamburger.js" ></script>
 </head>
 <body>
 
@@ -31,16 +33,19 @@
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li class="active"><a href="#">Franklin</a></li>
-      <li><a href="#">Greenville</a></li>
-      <li><a href="#">Springfield</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>   
-  </nav>
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#">Home</a>
+      <a href="#" class="active">Franklin</a>
+      <a href="#">Greenville</a>
+      <a href="#">Springfield</a>
+      <a href="#">Storm Center</a>
+      <a href="#">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>   
+ 
     
   <main class="clearfix">
     <!--<div class="clearfix"> -->
@@ -137,8 +142,8 @@ Frankness applauded by supported ye household. Collected favourite now for for a
         123 Main St. Anytown, US 99999<br>
         Google Map<br>
     </aside>
-    <p class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate">May 26, 2018</p>
+      <p class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate"></span></p>
   </footer>
-
+<script src="scripts/currentdate.js" ></script>
 </body>
 </html>
