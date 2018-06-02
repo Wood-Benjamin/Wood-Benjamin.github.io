@@ -38,8 +38,7 @@ body {
 
 header, nav, .topnav, main, footer { 
   margin: auto;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding: 0em;
   max-width: 1200px;
 }
 
@@ -136,7 +135,7 @@ nav ul li a:hover {
   color: black;
 }
 
-.topnav a:active {
+.topnav .active {
   background-color: #4c72af;
   color: #ffffff;
 }
@@ -176,14 +175,13 @@ main {
 }
 
 main figure {
-    width:93.%;
-    margin: 0;
+    width:100%;
+    margin: none;
+    padding: none;
 }
 main figure img {
     width:100%;
     height: 15vw;
-    margin: none;
-    padding: none;
 }
 .main-image {
   margin-top: 0.4em;
