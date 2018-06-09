@@ -1,0 +1,33 @@
+/*  display for medium screens */
+
+@media only screen and (min-width: 768px) {
+ 
+  .title {
+    font-size: 3.4em;
+  }
+    
+  .subtitle {
+    font-size: 1.8em;
+  }  
+
+  .topnav a {
+    font-size: 1.1em;
+  }
+  figure img {
+        max-height: 20vw;
+    }
+  .forecast { 
+    display: contents; 
+  }
+    
+  .article p {
+    width: 50%;
+    margin-left: 0.5em;
+  }
+    
+    
+    .grid-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
