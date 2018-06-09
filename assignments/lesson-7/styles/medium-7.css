@@ -1,9 +1,10 @@
 /*  display for medium screens */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 35em) {
  
   .title {
     font-size: 3.4em;
+  
   }
     
   .subtitle {
