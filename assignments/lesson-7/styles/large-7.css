@@ -10,11 +10,7 @@
     font-size: 2.2em;
   }   
     
-  .topnav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    }
+  
   .topnav a {
     font-size: 1.5em;
   }
