@@ -147,7 +147,8 @@ h3, h4 {
       display: flex;
       flex-flow: column;
       align-items: flex-start;
-    } 
+    }
+    
 }
 /*------------Main-------------*/
 main {
