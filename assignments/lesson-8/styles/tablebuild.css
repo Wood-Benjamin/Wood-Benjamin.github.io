@@ -1,0 +1,51 @@
+/*------------Wild Cards-------*/
+* { 
+    box-sizing: border-box;
+    margin: auto;
+    padding: 5px;
+    border: none;
+}
+/*--------------Body-----------*/
+body {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+}
+table {
+    box-shadow: 5px 5px 20px #628ca6;
+    border-collapse: collapse;    
+}
+table, td, th {
+    border: 1px solid #bcbcbc;
+}
+td, th {
+    text-align: center;
+    padding: 0.4em 0.6em;
+}
+thead tr:first-child th {
+    background-color: #7fb9c2;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+}
+thead tr:nth-child(2) th {
+    background-color: #628ca6;
+    color: white;
+}
+tbody tr:nth-child(odd) td {
+    background: #e7f0ed 
+}
+tbody tr:nth-child(even) td {
+    background: #e7ffed 
+}
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 0.50em;
+    font-weight: bold;
+}

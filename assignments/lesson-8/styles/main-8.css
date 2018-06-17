@@ -1,51 +1,358 @@
+
 /*------------Wild Cards-------*/
 * { 
     box-sizing: border-box;
-    margin: auto;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
     border: none;
+
 }
-/*--------------Body-----------*/
+/*------------Body-------------*/
 body {
-    font-size: 16px;
-    font-family: "Ubuntu", sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Abel", sans-serif;
+    max-width: 80em;
+    margin: auto;            
 }
-table {
-    box-shadow: 5px 5px 20px #628ca6;
-    border-collapse: collapse;    
+
+/*------------Header-----------*/
+
+header, nav, .topnv, footer {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    
+  
 }
-table, td, th {
-    border: 1px solid #bcbcbc;
+picture {
+    flex: 0 1 128px;
+    text-align: center;	
+	background-color: #ffffff;
 }
-td, th {
-    text-align: center;
-    padding: 0.4em 0.6em;
+
+picture img {
+    width: 100px;
+    height: auto;
 }
-thead tr:first-child th {
-    background-color: #7fb9c2;
+
+ .headings {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+h1, h2 {
+    background-color: #ffffff;
+    color: #7793de;
+    
+}
+
+h1 {
     font-weight: bold;
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: #8888aa;
+	font-style: italic;
+    margin-bottom: 0.3em;
+}
+
+h3, h4 {
+    font-weight: bolder;
     font-size: 1.5em;
-    color: black;
+    background-color: #ffffff;
+    color: #908185;
+    
 }
-thead tr:nth-child(2) th {
-    background-color: #628ca6;
-    color: white;
+@media (max-width: 37.5em) {
+	picture img {
+		width: 80px;
+	}
+
+	h1 {
+		font-size: 1.1rem;
+	}
+	
+	h2 {
+		font-size: .75rem;
+		color: blue;
+	}
 }
-tbody tr:nth-child(odd) td {
-    background: #e7f0ed 
+/*------------Navigation-------*/
+
+/* -------------------Hamburger Nav Bar-------------------------*/
+
+.topnav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  overflow: hidden;
+  background-color: #6ddff4;
+    
 }
-tbody tr:nth-child(even) td {
-    background: #e7ffed 
+
+.topnav a {
+  color: #161ede;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-tbody tr:nth-child(4) td:nth-child(3) {
-    background-color: #628ca6;
-    color: white;
+
+.topnav a:hover {
+  background-color: #11f2b5;
+  color: black;
 }
-tbody tr:nth-child(5) td:first-child {
-    font-style: italic;
+
+.topnav .active {
+  background-color: #4c72af;
+  color: #ffffff;
 }
-tfoot {
-    background-color: #7fb9c2;
-    font-size: 0.50em;
-    font-weight: bold;
+.active {
+  background-color: #4c72af;
+  color: #ffffff;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 725px) {
+  .topnav {flex-flow: column; justify-content: flex-start;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .topnav.responsive {flex-flow: column;}
+  .topnav.responsive .icon {
+    flex-flow: column;
+    justify-content: flex-start;
+   
+  }
+   
+  .topnav.responsive a {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+    }
+    
+}
+/*------------Main-------------*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+}
+main h1 {
+    text-align: center;
+}
+/*----------Storm Center Form---------*/
+form {
+    background-color: #d8d8d7;
+    width: 22rem;
+    border: 1px solid grey;
+    padding: 0;
+}
+form fieldset {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+form .personaltop {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+form .personaltop legend {
+    font-size:2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+form .personalInfo input:required ~ label:after,
+textarea:required ~ label:after {
+    content: " *";
+    color: #cc3f85;
+}
+form .personaltop label {
+margin: 5px 0px 5px 0px;
+}
+form .personalbottom {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+form .personalbottom legend {
+    font-size:2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+form .personalbottom label {
+margin: 5px 0px 5px 0px;
+}
+form .submitBtn {
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 20px;
+}
+
+
+
+
+/*-----	figure*/
+figure img{
+   width: 100%;
+}
+	
+/*-----	section*/
+.section-currentweather {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 40em;
+    margin: auto;
+}
+
+.currentweather {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 530px) {
+    .currentweather {
+        flex-flow: column;
+        justify-content: space-around;
+    }
+}
+/*-----	section*/
+.forecast {
+  display: none;
+}
+
+.forecast h3 {
+  border-style: solid solid none solid;
+  text-align: center;
+  border-width: 1px;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5em;
+  background-color: #dde692;
+    
+}
+
+.forecast table {
+  border: 1px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.forecast table th, .forecast table td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 4px;
+  background-color: #c99a9a;
+}
+/*----	article*/
+article {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border: 1px solid;
+  margin-top: 0.5em;
+  padding: 1em;
+}
+article h3 {
+  font-size: 1.5em;
+  margin: auto auto 10px auto;
+  font-style: italic;
+}
+
+.article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.article {
+    
+}
+.article p {
+  text-align: justify;
+}
+
+.article-image img {
+  
+  margin: 5px;
+    
+}
+
+/*------------Footer-----------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.8em;
+  margin: auto;
+}
+
+footer aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blue;
+  font-weight: bold;
+}
+
+footer p {
+  color: darkblue;
+  margin: 2em 2em 2em 5em;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-flow: column;
+  
+    }
+}
+/*-----------------------------Gallery.html---------------------*/
+   .grid-main {
+        display: grid;
+        grid-template-columns: auto;
+    } 
+    
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    .grid-gallery figure, figcaption, img {
+        min-width: 10vw;
+        font-size: 1em;
+    }
+/*---------------------------Thanks.html----------------------*/
+.thanks {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-size: 1.5em;
 }

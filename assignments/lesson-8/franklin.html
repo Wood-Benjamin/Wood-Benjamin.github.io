@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City Weather </title>
+  <meta name="author" content="Benjamin Wood">
+  <meta name="description" content="Franklin City weather and forecasts.">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/normalize.css"> 
+      <link rel="stylesheet" href="styles/main-8.css">
+      <link rel="stylesheet" href="styles/medium-8.css">
+      <link rel="stylesheet" href="styles/large-8.css">
+      
+</head>
+<body>
+
+  <header>
+      <picture>
+            <img src="images/logo-220x150px.png" alt="Logo">
+      </picture>
+    
+      <section class="headings">
+        <h1 class="title">Franklin City Weather</h1>
+        <h2 class="subtitle">Weather on the go.</h2>
+      </section>
+  </header>
+
+  <nav>
+    <div class="topnav"  id="myTopnav">
+             
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+             <a href="#" class="link">Home</a>
+             <a href="#" class="active link">Franklin</a>
+             <a href="#" class="link">Greenville</a>
+             <a href="#" class="link">Springfield</a>
+             <a href="stormcenter.html" class="link">Storm Center</a>
+             <a href="gallery.html" class="link">Gallery</a>
+          
+    </div>
+ </nav>
+    
+  <main>
+       <figure>
+            <img  src="images/franklinDefault.jpg" alt="Main image" sizes="100vw"
+                 srcset="images/franklin400.jpg 585w,
+                         images/franklin800.jpg 1100w,
+                         images/franklin1200.jpg 1600w"> 
+        </figure>
+    
+      <section class="section-currentweather">
+        <div>
+            <h3 class="headings">Franklin</h3>
+        </div>
+        <div class="currentweather">
+            <img src="images/sun.png" alt="Weather image">
+            <h4>
+              Sunny
+            </h4>
+            <div>
+              <div>High: 86&deg;F</div>
+              <div>Low: 63&deg;F</div>
+            </div>
+            <div>
+              <div>Precipitation: 0%</div>  
+              <div>Wind Speed: 7 mph SW</div>
+              <div class="windchill" id="windchill"></div>
+            </div>
+            
+        </div>  
+      </section>
+
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>86&deg;F</td>
+            <td>87&deg;F</td>
+            <td>85&deg;F</td>
+            <td>84&deg;F</td>
+            <td>88&deg;F</td>
+            <td>88&deg;F</td>
+            <td>89&deg;F</td>
+            <td>82&deg;F</td>
+            <td>83&deg;F</td>
+            <td>84&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <article>
+      <h3>Franklin City Enjoying Sunny Conditions</h3> 
+      <div class="article">
+        <div class="article-image">
+          <img src="images/article-photo.jpg" alt="Article Photo">
+        </div>
+        <p>
+          As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity. 
+
+Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting. 
+
+Way nor furnished sir procuring therefore but. Warmth far manner myself active are cannot called. Set her half end girl rich met. Me allowance departure an curiosity ye. In no talking address excited it conduct. Husbands debating replying overcame blessing he it me to domestic. 
+
+Frankness applauded by supported ye household. Collected favourite now for for and rapturous repulsive consulted. An seems green be wrote again. She add what own only like. Tolerably we as extremity exquisite do commanded. Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies. Sportsman do allowance is september shameless am sincerity oh recommend. Gate tell man day that who.
+        </p>
+      </div>
+    </article>      
+  
+  </main>
+    
+  <footer>
+      <aside>
+        <div>Franklin City</div>
+        <div>999.999.9999</div>
+        <div>123 Main St. Anytown, US 99999</div>
+        <div>Google Map</div>
+      </aside>
+      <p class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate"></span></p>
+  </footer>
+<script src="scripts/hamburger.js" ></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/currentdate.js" ></script>
+</body>
+</html>
