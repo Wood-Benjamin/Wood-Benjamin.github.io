@@ -1,0 +1,29 @@
+@media only screen and (min-width: 45em) {
+    
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #187474;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+/* section styles */
+
+section article {
+  max-width: 33em;
+  min-width: 25em;
+  margin-right: 18px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -3px;
+}
