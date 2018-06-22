@@ -3,7 +3,7 @@
 //  Franklin City ID: 4156210
 
 var weatherRequest = new XMLHttpRequest;
-weatherRequest.open('GET','http://api.openweathermap.org/data/2.5/weather?id=4156210&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
+weatherRequest.open('GET','//api.openweathermap.org/data/2.5/weather?id=4156210&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
 
 weatherRequest.send();
 
@@ -15,7 +15,7 @@ weatherRequest.onload = function() {
     
     var iconcode = weatherInfo.weather[0].icon;
     
-    var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
     
     document.getElementById('weatherIcon').src = icon_path;
     
