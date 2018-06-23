@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City Weather </title>
+  <meta name="author" content="Benjamin Wood">
+  <meta name="description" content="Franklin City weather and forecasts.">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/normalize.css"> 
+      <link rel="stylesheet" href="styles/main-9.css">
+      <link rel="stylesheet" href="styles/medium-9.css">
+      <link rel="stylesheet" href="styles/large-9.css">
+      
+</head>
+<body>
+
+  <header>
+      <picture>
+            <img src="images/logo-220x150px.png" alt="Logo">
+      </picture>
+    
+      <section class="headings">
+        <h1 class="title">Franklin City Weather</h1>
+        <h2 class="subtitle">Weather on the go.</h2>
+      </section>
+  </header>
+
+  <nav>
+    <div class="topnav"  id="myTopnav">
+             
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+             <a href="index.html" class="link">Home</a>
+             <a href="#" class="active">Franklin</a>
+             <a href="#" class="link">Greenville</a>
+             <a href="#" class="link">Springfield</a>
+             <a href="stormcenter.html" class="link">Storm Center</a>
+             <a href="gallery.html" class="link">Gallery</a>
+          
+    </div>
+ </nav>
+    
+  <main>
+       <figure>
+            <img  src="images/franklinDefault.jpg" alt="Main image" sizes="100vw"
+                 srcset="images/franklin400.jpg 585w,
+                         images/franklin800.jpg 1100w,
+                         images/franklin1200.jpg 1600w"> 
+        </figure>
+    
+      <section class="section-currentweather">
+        <div>
+            <h3 class="headings">Franklin</h3>
+        </div>
+        <div class="currentweather">
+            <img src="images/sun.png" alt="Weather image" id="iconTemp">
+            <h4>
+              <span id="icondetailsTemp">Sunny</span>
+            </h4>
+            <div>
+              <div>High: <span id="highTemp"></span>&deg;F</div>
+              <div>Low: <span id="lowTemp"></span>&deg;F</div>
+            </div>
+            <div>
+              <div>Current Tempurature: <span id="curTemp"></span>&deg;F</div> 
+              <div>Precipitation: <span id="precip"></span>%</div>  
+              <div>Wind Speed: <span id="windspeed"></span> mph SW</div>
+              <div class="windchill" id="windchill"></div>
+            </div>
+            
+        </div>  
+      </section>
+
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>86&deg;F</td>
+            <td>87&deg;F</td>
+            <td>85&deg;F</td>
+            <td>84&deg;F</td>
+            <td>88&deg;F</td>
+            <td>88&deg;F</td>
+            <td>89&deg;F</td>
+            <td>82&deg;F</td>
+            <td>83&deg;F</td>
+            <td>84&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <article>
+      <h3>Franklin City Enjoying Sunny Conditions</h3> 
+      <div class="article">
+        <div class="article-image">
+          <img src="images/article-photo.jpg" alt="Article Photo">
+        </div>
+        <p><span id="fr_weather"></span></p>
+      </div>
+    </article>      
+  
+  </main>
+    
+  <footer>
+      <aside>
+        <div>Franklin City</div>
+        <div>999.999.9999</div>
+        <div>123 Main St. Anytown, US 99999</div>
+        <div>Google Map</div>
+      </aside>
+      <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather On The Go | <span>Source Provided By <a href="//openweathermap.org"  id="datasource">&nbsp;OpenWeatherMap.Org</a></span> | <span id="currentdate"></span></p>
+  </footer>
+    
+<script src="scripts/currentdate.js" ></script>
+<script src="scripts/weather.js" ></script>
+<script src="scripts/hamburger.js" ></script>
+</body>
+</html>
