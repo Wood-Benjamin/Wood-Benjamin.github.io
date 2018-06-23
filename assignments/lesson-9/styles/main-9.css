@@ -174,7 +174,6 @@ main h1 {
 }
 ._weather article img {
     max-width: 20rem;
-    max-height: auto;
 }
 #fr_weather article {
     width: 35rem;
