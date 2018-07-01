@@ -215,7 +215,7 @@ function displayTownData(jsonObj) {
         title = 'Gallery';
     }
     else if (pageHREF == "thanks.html"){
-        title = 'Thank You'
+        title = 'Thank You';
     }
     else {title = 'S-Madisen Weather CO.';}
 })();
