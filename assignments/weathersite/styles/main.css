@@ -93,6 +93,8 @@ h3, h4 {
 div ul {
   list-style-type: none;
     width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 .topnav {
   display: flex;
