@@ -155,7 +155,7 @@ function displayTownData(jsonObj) {
     else {townName == '';}
     
     for (var i = 0; i < towns.length; i++) {
-        if (towns[i].name == townName {
+        if (towns[i].name == townName) {
         var myArticle = document.createElement('article');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
