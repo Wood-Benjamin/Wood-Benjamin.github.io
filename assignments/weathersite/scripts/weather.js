@@ -191,3 +191,31 @@ function displayTownData(jsonObj) {
     }
 }
 })();
+(function titlechange(){
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    var title = document.getElementsByTagName('title').innerHTML;
+    if (pageHREF == "index.html"){
+        title = "S-Madisen Weather CO."
+    }
+    else if (pageHREF == "franklin.html"){
+        title = 'Franklin';
+    }
+    else if (pageHREF == "springfield.html"){
+        title = 'Springfield';
+    }
+    else if (pageHREF == "greenville.html"){
+        title = 'Greenville';
+    }
+    else if (pageHREF == "stormcenter.html"){
+        title = 'Storm Center';
+    }
+    else if (pageHREF == "gallery.html"){
+        title = 'Gallery';
+    }
+    else if (pageHREF == "thanks.html"){
+        title = 'Thank You'
+    }
+    else {title = 'S-Madisen Weather CO.';}
+})();
