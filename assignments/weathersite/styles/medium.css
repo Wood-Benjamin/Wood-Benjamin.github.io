@@ -30,5 +30,13 @@
     .grid-gallery {
         grid-template-columns: 1fr 1fr;
     }
+    ._weatherStory{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+    ._weatherStory article {
+        box-shadow: 5px 5px 15px gray;
+    }
     
 }

@@ -48,6 +48,14 @@
     ._weather article {
         box-shadow: 5px 5px 15px gray;
     }
+    ._weatherStory{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+    ._weatherStory article {
+        box-shadow: 5px 5px 15px gray;
+    }
    
     
 }
