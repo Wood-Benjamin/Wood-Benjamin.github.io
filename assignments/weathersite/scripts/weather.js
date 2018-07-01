@@ -57,7 +57,7 @@ var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 var zipcode = "";
-if (pageHREF !=="") {
+    
     if (pageHREF = "franklin.html"){
         zipcode = 55333;
     }
@@ -68,8 +68,7 @@ if (pageHREF !=="") {
         zipcode = 27858;
     }
     else {zipcode = 84078;}
-    return zipcode;
-}
+
     
 var weatherRequest = new XMLHttpRequest;
 weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=' + zipcode +',us&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
