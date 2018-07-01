@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallery</title>
-  <meta name="author" content="Benjamin Wood">
-  <meta name="description" content="Franklin City gallery.">
-      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="styles/normalize.css"> 
-      <link rel="stylesheet" href="styles/main-9.css">  
-      <link rel="stylesheet" href="styles/medium-9.css">
-      <link rel="stylesheet" href="styles/large-9.css">
-</head>
+<head includefile="head.html">
+  </head>
 <body class="grid-body">
 
-  <header>
-      <picture>
-            <img src="images/logo-220x150px.png" alt="Logo">
-      </picture>
-    
-      <section class="headings">
-        <h1 class="title">Gallery</h1>
-        <h2 class="subtitle">Photos around town.</h2>
-      </section>
+  <header includefile="header.html">
   </header>
 
-  <nav>
-    <div class="topnav" id="myTopnav">
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      <a href="index.html" class="link">Home</a>
-      <a href="franklin.html" class="link">Franklin</a>
-      <a href="#" class="link">Greenville</a>
-      <a href="#" class="link">Springfield</a>
-      <a href="stormcenter.html" class="link">Storm Center</a>
-      <a href="#" class="active">Gallery</a>
-    </div>   
- </nav>
+  <nav includefile="nav.html">
+  </nav>
 
 <main class="grid-main">
     
@@ -83,15 +53,27 @@
   </div>    
 </main>
     
-<footer>
-      <aside>
-        <div>Franklin City</div>
-        <div>999.999.9999</div>
-        <div>123 Main St. Anytown, US 99999</div>
-        <div>Google Map</div>
-      </aside>
-      <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather On The Go | <span>Source Provided By <a href="//openweathermap.org"  id="datasource">&nbsp;OpenWeatherMap.Org</a></span> | <span id="currentdate"></span></p>
+<footer includefile="footer.html">
   </footer>
+<script src="scripts/include.js" ></script>
+<script>
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+	var menu = document.querySelectorAll('div#myTopnav a');
+	var i;
+
+	for (i=0; i<menu.length; i++) {
+		var currentURL = (menu[i].getAttribute("href"));
+		menu[i].parentNode.className="";
+		if (currentURL===pageHREF) {
+			menu[i].parentNode.className="active";
+		}
+	}
+}
+</script>
 <script src="scripts/hamburger.js" ></script>
 <script src="scripts/currentdate.js" ></script>
 <script src="scripts/weather.js" ></script>
