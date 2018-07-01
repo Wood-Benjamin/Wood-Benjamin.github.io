@@ -144,15 +144,15 @@ function displayTownData(jsonObj) {
     var townName = "";
 
     if (pageHREF == "franklin.html"){
-        townName == 'Franklin';
+        townName = 'Franklin';
     }
     else if (pageHREF == "springfield.html"){
-        townName == 'Springfield';
+        townName = 'Springfield';
     }
     else if (pageHREF == "greenville.html"){
-        townName == 'Greenville';
+        townName = 'Greenville';
     }
-    else {townName == '';}
+    else {townName = '';}
     
     for (var i = 0; i < towns.length; i++) {
         if (towns[i].name == townName) {
