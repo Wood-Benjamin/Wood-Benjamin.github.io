@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City Weather </title>
+  <meta name="author" content="Benjamin Wood">
+  <meta name="description" content="Franklin City weather and forecasts.">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/normalize.css"> 
+      <link rel="stylesheet" href="styles/main-9.css">
+      <link rel="stylesheet" href="styles/medium-9.css">
+      <link rel="stylesheet" href="styles/large-9.css">
+      
+</head>
+<body>
+
+  <header>
+      <picture>
+            <img src="images/logo-220x150px.png" alt="Logo">
+      </picture>
+    
+      <section class="headings">
+        <h1 class="title">Franklin City Weather</h1>
+        <h2 class="subtitle">Weather on the go.</h2>
+      </section>
+  </header>
+
+  <nav>
+    <div class="topnav"  id="myTopnav">
+             
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+             <a href="index.html" class="link">Home</a>
+             <a href="franklin.html" class="link">Franklin</a>
+             <a href="#" class="link">Greenville</a>
+             <a href="#" class="link">Springfield</a>
+             <a href="#"  class="active">Storm Center</a>
+             <a href="gallery.html" class="link">Gallery</a>
+          
+    </div>
+ </nav>
+  <main class="stormcenter">
+    <h1>Storm Center</h1>
+      
+    <form id="stormcenter" method="get" action="thanks.html">
+      <fieldset>
+        <div class="personaltop">
+        <legend>
+		<div>Personal Information</div>
+		</legend>
+        <label class="personalInfo">
+          <div>Full Name:</div>		  
+          <input type="text" name="fullname" placeholder="Full Name" autofocus pattern="[a-zA-Z -._]{5,99}" required>
+        </label>
+        <label class="personalInfo">
+          <div>Email:</div>
+          <input type="email" name="email" placeholder="youremail@email.com" required>
+        </label>
+        <label class="personalInfo">
+          <div>Phone:</div>
+          <input type="tel" name="phonenumber" value="" placeholder="5552221111" pattern="[0-9]{10,20}" required>
+        </label> 
+        <label class="personalInfo">
+          <div>Zip Code:</div>
+          <input type="number" name="zipcode" value="" placeholder="84321" required>
+        </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="personalbottom">
+        <legend>
+		<div>Storm Information</div>
+		</legend>
+        <label>
+          <div>Storm Date:</div> 
+          <input type="date" name="date">
+        </label>
+        <label>
+          <div>Storm Type:</div>
+          <input list="stormtypes" name="stormtype">
+          <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+        </label>
+		<label>
+		  <div>Storm Severity:</div>
+          <div>
+          <input type="range" name="stormseverity" value="5" min="1" max="10" step="1"oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+          <div id="stormseverity">5</div>
+          </div>
+		</label>       
+        <label>
+          <div>Storm Region:</div>
+		  <select name="stormregion">
+            <option disabled selected>Select Region ...</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfiled">Springfield</option>
+          </select>
+        </label>
+        <label>
+          <div>User In-Danger Level:</div>
+		  <div>
+          <input type="radio" name="danger_level" value="yes" > Yes<br>
+          <input type="radio" name="danger_level" value="maybe" > Maybe<br>
+		  <input  type="radio" name="danger_level" value="no" > No <br>
+          </div>
+        </label>
+        <label>
+          <div>Comments:</div>
+		  <textarea  name="comments" cols="40" rows="6" placeholder="Additional information or comments.">
+		  </textarea>
+        </label>
+      </div>
+      </fieldset>
+      <input type="submit" class="submitBtn" value="Send Storm Information">
+      
+    </form>
+  </main>
+  
+    
+  <footer>
+      <aside>
+        <div>Franklin City</div>
+        <div>999.999.9999</div>
+        <div>123 Main St. Anytown, US 99999</div>
+        <div>Google Map</div>
+      </aside>
+      <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather On The Go | <span>Source Provided By <a href="//openweathermap.org"  id="datasource">&nbsp;OpenWeatherMap.Org</a></span> | <span id="currentdate"></span></p>
+  </footer>
+<script src="scripts/hamburger.js" ></script>
+<script src="scripts/windchill.js" ></script>
+<script src="scripts/currentdate.js" ></script>
+<script src="scripts/stormcenter.js" ></script>
+</body>
+</html>
