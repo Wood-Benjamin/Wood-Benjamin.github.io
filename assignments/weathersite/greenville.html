@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S-Madisen Weather CO.</title>
+  <meta name="author" content="Benjamin Wood">
+  <meta name="description" content="S-Madisen weather and forecasts.">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/normalize.css"> 
+      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/medium.css">
+      <link rel="stylesheet" href="styles/large.css">
+      
+</head>
+<body>
+
+  <header includefile="header.html">
+  </header>
+
+  <nav includefile="nav.html">
+  </nav>
+    
+  <main>
+       <figure>
+            <img  src="images/weathersite/weathersite_default.jpg" alt="Main image" sizes="100vw"
+                 srcset="images/weathersite/weathersite400.jpg 585w,
+                         images/weathersite/weathersite800.jpg 1100w,
+                         images/weathersite/weathersite1200.jpg 1600w"> 
+        </figure>
+    
+      <section class="section-currentweather">
+        <div>
+            <h3 class="headings">Greenville</h3>
+        </div>
+        <div class="currentweather">
+            <img src="images/weathersite/placeholder-image.png" alt="Weather image" id="iconTemp">
+            <h4>
+              <span id="icondetailsTemp">Sunny</span>
+            </h4>
+            <div>
+              <div>High: <span id="highTemp"></span>&deg;F</div>
+              <div>Low: <span id="lowTemp"></span>&deg;F</div>
+            </div>
+            <div>
+              <div>Current Tempurature: <span id="curTemp"></span>&deg;F</div> 
+              <div>Precipitation: <span id="precip"></span>%</div>  
+              <div>Wind Speed: <span id="windspeed"></span> mph SW</div>
+              <div class="windchill" id="windchill"></div>
+            </div>
+            
+        </div>  
+      </section>
+
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>80&deg;F</td>
+            <td>82&deg;F</td>
+            <td>84&deg;F</td>
+            <td>83&deg;F</td>
+            <td>87&deg;F</td>
+            <td>87&deg;F</td>
+            <td>88&deg;F</td>
+            <td>83&deg;F</td>
+            <td>82&deg;F</td>
+            <td>85&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <article>
+      <h3>Greenville City Enjoying Good Conditions</h3> 
+      <div class="article">
+        <div class="article-image">
+          <img src="images/articles/article-photo.jpg" alt="Article Photo">
+        </div>
+        <p><span id="fr_weather"></span></p>
+      </div>
+    </article>      
+  
+  </main>
+    
+  <footer includefile="footer.html">
+  </footer>
+<script src="scripts/include.js" ></script>
+<script>
+var urlString = document.location.href:
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+	var menu = document.querySelectorAll('ul#myTopnav li a');
+	var i;
+
+	for (i=0; i<menu.length; i++) {
+		var currentURL = (menu[i].getAttribute("href"));
+		menu[i].parentNode.className="";
+		if (currentURL===pageHREF) {
+			menu[i].parentNode.className="active";
+		}
+	}
+}
+</script>
+<script src="scripts/currentdate.js" ></script>
+<script src="scripts/weather.js" ></script>
+<script src="scripts/hamburger.js" ></script>
+</body>
+</html>
