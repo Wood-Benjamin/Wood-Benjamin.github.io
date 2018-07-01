@@ -4,7 +4,7 @@ var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 
 if (pageHREF !=="") {
-	var menu = document.querySelectorAll('nav div#myTopnav a');
+	var menu = document.querySelectorAll('ul#myTopnav li a');
 	var i;
 
 	for (i=0; i<menu.length; i++) {
