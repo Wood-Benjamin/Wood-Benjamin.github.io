@@ -57,14 +57,14 @@ var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 var zipcode = "";
-    
-    if (pageHREF = "franklin.html"){
+
+    if (pageHREF == "franklin.html"){
         zipcode = 55333;
     }
-    else if (pageHREF = "springfield.html"){
+    else if (pageHREF == "springfield.html"){
         zipcode = 56087;
     }
-    else if (pageHREF = "greenville.html"){
+    else if (pageHREF == "greenville.html"){
         zipcode = 27858;
     }
     else {zipcode = 84078;}
