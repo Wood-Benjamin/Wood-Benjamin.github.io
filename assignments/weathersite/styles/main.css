@@ -94,7 +94,7 @@ nav ul {
   list-style-type: none;
     width: 100%;
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 }
 .topnav {
   display: flex;
