@@ -53,7 +53,7 @@ function displayTownData(jsonObj) {
 //  Franklin City ID: 55333
     //springfield, mn 56087
     //Greenville, NC  27858
-var urlString = window.location.href:
+var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 var zipcode = "";
