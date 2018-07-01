@@ -50,10 +50,29 @@ function displayTownData(jsonObj) {
 (function currentWeather(){
 // API Weather Key: 78e281f005984c45bee1997e137143b6
 
-//  Franklin City ID: 4156210
-
+//  Franklin City ID: 55333
+    //springfield, mn 56087
+    //Greenville, NC  27858
+var urlString = document.location.href:
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+var zipcode = "";
+if (pageHREF !=="") {
+    if (pageHREF = "franklin.html"){
+        zipcode = 55333;
+    }
+    else if (pageHREF = "springfield.html"){
+        zipcode = 56087;
+    }
+    else if (pageHREF = "greenville.html"){
+        zipcode = 27858;
+    }
+    else {zipcode = 84078;}
+    return zipcode;
+}
+    
 var weatherRequest = new XMLHttpRequest;
-weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
+weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=' + zipcode +',us&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
 weatherRequest.send();
 
 weatherRequest.onload = function() {
