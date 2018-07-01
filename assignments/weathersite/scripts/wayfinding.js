@@ -1,4 +1,5 @@
-var urlString = document.location.href:
+(function wayfinding(){
+    var urlString = document.location.href:
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 
@@ -14,3 +15,4 @@ if (pageHREF !=="") {
 		}
 	}
 }
+})();
