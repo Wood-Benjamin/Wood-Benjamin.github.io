@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franklin City Weather </title>
-  <meta name="author" content="Benjamin Wood">
-  <meta name="description" content="Franklin City weather and forecasts.">
-      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="styles/normalize.css"> 
-      <link rel="stylesheet" href="styles/main-8.css">
-      <link rel="stylesheet" href="styles/medium-8.css">
-      <link rel="stylesheet" href="styles/large-8.css">
-      
-</head>
+<head includefile="head.html">
+  </head>
 <body>
 
-  <header>
-      <picture>
-            <img src="images/logo-220x150px.png" alt="Logo">
-      </picture>
-    
-      <section class="headings">
-        <h1 class="title">Franklin City Weather</h1>
-        <h2 class="subtitle">Weather on the go.</h2>
-      </section>
+  <header includefile="header.html">
   </header>
 
   <nav>
-    <div class="topnav"  id="myTopnav">
-             
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                  </a>
-             <a href="index.html" class="link">Home</a>
-             <a href="franklin.html" class="link">Franklin</a>
-             <a href="#" class="link">Greenville</a>
-             <a href="#" class="link">Springfield</a>
-             <a href="stormcenter.html"  class="active">Storm Center</a>
-             <a href="gallery.html" class="link">Gallery</a>
-          
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="link">Home</a>
+        <a href="franklin.html" class="link">Franklin</a>
+        <a href="greenville.html" class="link">Greenville</a>
+        <a href="springfield.html" class="link">Springfield</a>
+        <a href="stormcenter.html" class="active">Storm Center</a>
+        <a href="gallery.html" class="link">Gallery</a>
     </div>
  </nav>
   <main class="stormcenter">
@@ -50,15 +27,27 @@
   </main>
   
     
-  <footer>
-      <aside>
-        <div>Franklin City</div>
-        <div>999.999.9999</div>
-        <div>123 Main St. Anytown, US 99999</div>
-        <div>Google Map</div>
-      </aside>
-      <p class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate"></span></p>
+ <footer includefile="footer.html">
   </footer>
+<script src="scripts/include.js" ></script>
+<script>
+var urlString = document.location.href:
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+	var menu = document.querySelectorAll('div#myTopnav a');
+	var i;
+
+	for (i=0; i<menu.length; i++) {
+		var currentURL = (menu[i].getAttribute("href"));
+		menu[i].parentNode.className="";
+		if (currentURL===pageHREF) {
+			menu[i].parentNode.className="active";
+		}
+	}
+}
+</script>
 <script src="scripts/hamburger.js" ></script>
 <script src="scripts/windchill.js"></script>
 <script src="scripts/currentdate.js" ></script>
