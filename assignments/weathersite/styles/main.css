@@ -192,6 +192,18 @@ main h1 {
     padding: 0px;
     margin: 0px;
 }
+#fr_weatherStory article {
+    width: 35rem;
+    padding: 0px;
+    margin-bottom: 15px;
+    border: 0px;
+    font-weight: 700;
+    align-items: center;
+}
+#fr_weatherStory article p {
+    padding: 0px;
+    margin: 0px;
+}
 /***********************************/
 ._weather{
     display: flex;
@@ -216,6 +228,11 @@ main h1 {
 #fr_weather article p {
     padding: 0px;
     margin: 0px;
+}
+@media screen and (max-width: 530px) {
+    ._weather {
+        display: none;
+    }
 }
 /*----------Storm Center Form---------*/
 main form {

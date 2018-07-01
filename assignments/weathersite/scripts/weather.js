@@ -1,6 +1,6 @@
 (function homePage(){
 var section = document.querySelector('#_weather');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';
 var requestObject = new XMLHttpRequest();
 requestObject.open('GET', requestURL);
 requestObject.responseType = 'text';
@@ -71,7 +71,7 @@ var zipcode = "";
 
     
 var weatherRequest = new XMLHttpRequest;
-weatherRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=' + zipcode +',us&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
+weatherRequest.open('GET','//api.openweathermap.org/data/2.5/weather?zip=' + zipcode +',us&appid=78e281f005984c45bee1997e137143b6&units=imperial',true);
 weatherRequest.send();
 
 weatherRequest.onload = function() {
@@ -87,7 +87,7 @@ weatherRequest.onload = function() {
     
     //  icon, current condition icon
     var iconcode = fr_weatherInfo.weather[0].icon;
-    var icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
+    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
     document.getElementById('iconTemp').src = icon_path;
     
     //  high temp
@@ -122,7 +122,7 @@ document.getElementById('windchill').innerHTML = "WindChill Factor: " + x + "&de
 
 (function franklinPage(){
 var section = document.querySelector('#fr_weather');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';
 var requestObject = new XMLHttpRequest();
 requestObject.open('GET', requestURL);
 requestObject.responseType = 'text';
