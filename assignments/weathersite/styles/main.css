@@ -90,7 +90,9 @@ h3, h4 {
 /*------------Navigation-------*/
 
 /* -------------------Hamburger Nav Bar-------------------------*/
-
+ul {
+  list-style-type: none;
+}
 .topnav {
   display: flex;
   flex-flow: row nowrap;
