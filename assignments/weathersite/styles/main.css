@@ -167,6 +167,32 @@ main h1 {
     color: #121010;
     text-align: center;
 }
+/*----------Weather Story----------*/
+._weatherStory{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+._weatherStory article {
+    border-color: #6ddff4;
+    max-width: 20em;
+}
+._weatherStory article img {
+    max-width: 20rem;
+}
+#_weatherStory article {
+    width: 35rem;
+    padding: 0px;
+    margin-bottom: 15px;
+    border: 0px;
+    font-weight: 700;
+    align-items: center;
+}
+#_weatherStory article p {
+    padding: 0px;
+    margin: 0px;
+}
+/***********************************/
 ._weather{
     display: flex;
     flex-flow: row wrap;
