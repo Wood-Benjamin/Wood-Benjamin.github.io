@@ -67,7 +67,7 @@ var zipcode = "";
     else if (pageHREF == "greenville.html"){
         zipcode = 27858;
     }
-    else {zipcode = 84078;}
+    else {zipcode = "";}
 
     
 var weatherRequest = new XMLHttpRequest;
@@ -138,9 +138,24 @@ requestObject.onload = function() {
 function displayTownData(jsonObj) {
     var towns = jsonObj['towns'];
     var townImgIndx = 1;
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    var townName = "";
 
+    if (pageHREF == "franklin.html"){
+        townName = 'Franklin';
+    }
+    else if (pageHREF == "springfield.html"){
+        townName = 'Springfield';
+    }
+    else if (pageHREF == "greenville.html"){
+        townName = 'Greenville';
+    }
+    else {townName = '';}
+    
     for (var i = 0; i < towns.length; i++) {
-        if (towns[i].name == 'Franklin') {
+        if (towns[i].name == townName {
         var myArticle = document.createElement('article');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
