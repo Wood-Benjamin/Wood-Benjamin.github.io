@@ -108,7 +108,7 @@ nav ul {
     
 }
 
-.topnav li a {
+.topnav a {
   color: #161ede;
   text-align: center;
   padding: 14px 16px;
@@ -117,16 +117,16 @@ nav ul {
     list-style-type: none;
 }
 
-.topnav li a:hover {
+.topnav a:hover {
   background-color: #11f2b5;
   color: black;
 }
 
-.topnav li .active {
+.topnav .active {
   background-color: #4c72af;
   color: #ffffff;
 }
-#myTopnav li .active {
+#myTopnav .active {
   background-color: #4c72af;
   color: #ffffff;
 }
