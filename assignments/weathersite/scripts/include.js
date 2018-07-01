@@ -25,13 +25,13 @@ function include() {
 
 include();  // initial function call
 
-(function wayfinding(){
+function wayfinding(){
     var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
 
 if (pageHREF !=="") {
-	var menu = document.querySelectorAll('div#myTopnav a');
+	var menu = document.querySelectorAll('#myTopnav a');
 	var i;
 
 	for (i=0; i<menu.length; i++) {
@@ -42,4 +42,4 @@ if (pageHREF !=="") {
 		}
 	}
 }
-})();
+}
