@@ -164,14 +164,12 @@ main h1 {
     text-align: center;
 }
 /*----------Weather Story----------*/
-_weatherStory h3 {
-    text-align: center;
-    width: 100%;
-}
+
 ._weatherStory  {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-content: center;
     border-color: #6ddff4;
     max-width: 50%;
 }
@@ -186,7 +184,7 @@ _weatherStory h3 {
     align-items: center;
 }
 #_weatherStory article p {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
 }
 #fr_weatherStory article {
