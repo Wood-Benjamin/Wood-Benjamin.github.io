@@ -170,6 +170,7 @@ main h1 {
     flex-flow: column;
     justify-content: center;
     align-content: center;
+    margin: auto;
     border-color: #6ddff4;
     max-width: 50%;
 }
