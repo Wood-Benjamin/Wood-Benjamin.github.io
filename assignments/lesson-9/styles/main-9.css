@@ -20,7 +20,7 @@ body {
 
 /*------------Header-----------*/
 
-header, nav, .topnv, footer {
+header, nav, footer {
 	display: flex;
 	flex-direction: row;
     justify-content: center;
