@@ -171,6 +171,7 @@ _weatherStory h3 {
 ._weatherStory  {
     display: flex;
     flex-flow: column;
+    justify-content: center;
     border-color: #6ddff4;
     max-width: 50%;
 }
