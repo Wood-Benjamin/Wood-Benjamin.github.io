@@ -67,7 +67,7 @@ var zipcode = "";
     else if (pageHREF == "greenville.html"){
         zipcode = 27858;
     }
-    else {break;}
+    else {zipcode = 84078;}
 
     
 var weatherRequest = new XMLHttpRequest;
