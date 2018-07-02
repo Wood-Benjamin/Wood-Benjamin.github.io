@@ -164,12 +164,11 @@ main h1 {
     text-align: center;
 }
 /*----------Weather Story----------*/
-._weatherStory{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+_weatherStory h3 {
+    text-align: center;
+    width: 100%;
 }
-._weatherStory article {
+._weatherStory  {
     display: flex;
     flex-flow: row wrap;
     border-color: #6ddff4;
