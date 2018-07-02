@@ -184,7 +184,7 @@ main h1 {
     display: flex;
     flex-flow: row wrap;
     border-color: #6ddff4;
-    max-width: 100%;
+    max-width: 50%;
 }
 ._weatherStory article img {
     max-width: 80rem;
