@@ -1,0 +1,33 @@
+@media only screen and (min-width: 35em) {
+      body {
+        width: 100vw;
+    }
+    main {
+        flex-flow: column;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 100vw;
+        
+    }
+    .sub_main{
+        width: 80vw;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .callToAction {
+        flex-flow: row nowrap;
+        margin: auto;
+    }
+    .callToAction div {
+        margin: auto;
+    }
+    
+    .topnav {
+    }
+
+    
+}

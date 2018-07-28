@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>The Mountain Spoke</title>
+      <meta name="author" content="Benjamin Wood">
+      <meta name="description" content="The Mountain Spoke, peak in your future.">
+          <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+          <link href="//fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="styles/normalize.css"> 
+          <link rel="stylesheet" href="styles/main.css">
+          <link rel="stylesheet" href="styles/medium.css">
+          <link rel="stylesheet" href="styles/large.css">
+          <link rel="stylesheet" href="styles/evenst.css">
+</head>
+<body>
+
+<header>
+    <picture class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </picture>
+    <section class="headings">
+        <h1 class="title">The Mountain Spoke</h1>
+        <h3 class="subtitle">Peak in your future.</h3>
+    </section>
+</header>
+
+   <nav>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="link">Home</a>
+        <a href="tours.html" class="link">Adventure Tours</a>
+        <a href="events.html" class="link">Event</a>
+        <a href="products.html" class="link">Products</a>
+        <a href="services.html" class="link">Services and Repairs</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </div>
+
+  </nav>
+    
+<main>
+  <h1>Our Location</h1>
+  <h3>3950 Valley Commons Drive Bozeman, MT</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611015!2d-111.0929061845391!3d45.672272879103986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2sae!4v1523274857063" allowfullscreen></iframe>
+
+  <div>
+    <h2>Contact Form</h2>
+    <form action="thanks-for-contact.html">
+      <div id="eventRegistration">
+        <fieldset>  
+          <label>
+            <span>Full Name:</span>
+            <input 
+              type="text"
+              name="fullname"
+              value=""
+              placeholder="Full Name"
+              title="Please provide full name"
+              pattern="[a-zA-Z -._]{5,99}" required
+            >
+          </label>
+          <label>
+            <span>Email:</span>
+            <input 
+              type="email"
+              name="email"
+              value=""
+              placeholder="person@demo.com"
+              title="Please provide email address"
+              required
+            >
+          </label>
+          <label>
+            <span>Phone:</span>
+            <input 
+              type="tel"
+              name="phonenumber"
+              value=""
+              placeholder="0155512345"
+              title="Please provide phone number"
+              pattern="[0-9]{10,20}" 
+              required
+            >
+          </label>
+        </fieldset>    
+        <fieldset>
+          <label>
+            <span>Home State or Country:</span>
+            <input 
+              type="state or country"
+              name="state or country"
+              title="Please enter your state or country"
+              required
+            >
+          </label>
+          <label>
+            <span>Message:</span>
+            <textarea 
+              name="message"
+              cols="50"
+              rows="7"
+              placeholder="Please enter message."
+            ></textarea>
+          </label>
+        </fieldset>
+      </div>
+      <div id="eventRegistrationSubmit">
+        <input type="submit" class="submitBtn" value="Submit">
+        <input 
+          type="hidden"
+          value="Contact Form"
+          name="subject"
+        >
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+    <aside>
+        <div>The Mountain Spoke</div>
+        <div>999.999.9999</div>
+        <div>3950 Valley Commons Drive Bozeman, MT 59715</div>
+        <div><a href="https://goo.gl/maps/as26r2hyjoE2">Google Map</a></div>
+    </aside>
+    <div>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <a href="video-presentation.html">Video Presentation</a> | <a href="citedWorks.html">Cited Works</a></p>
+        </div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/services.js"></script>
+
+</body>
+</html>

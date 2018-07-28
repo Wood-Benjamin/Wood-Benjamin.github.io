@@ -1,0 +1,25 @@
+/*  dsplay for large screens */
+
+@media only screen and (min-width: 70em) {
+    
+    body {
+        width: 95vw;
+        margin: auto;
+    }
+    main {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .callToAction{
+        flex-flow: column;
+    }
+    .callToAction div{
+        margin: 8px;
+    }
+    .sub_main {
+        margin: auto;
+    }
+}

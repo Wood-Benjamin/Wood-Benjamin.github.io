@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>The Mountain Spoke</title>
+      <meta name="author" content="Benjamin Wood">
+      <meta name="description" content="The Mountain Spoke, peak in your future.">
+          <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+          <link href="//fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="styles/normalize.css"> 
+          <link rel="stylesheet" href="styles/main.css">
+          <link rel="stylesheet" href="styles/medium.css">
+          <link rel="stylesheet" href="styles/large.css">
+          <link rel="stylesheet" href="styles/evenst.css">
+</head>
+<body>
+
+<header>
+    <picture class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </picture>
+    <section class="headings">
+        <h1 class="title">The Mountain Spoke</h1>
+        <h3 class="subtitle">Peak in your future.</h3>
+    </section>
+</header>
+
+   <nav>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="link">Home</a>
+        <a href="tours.html" class="link">Adventure Tours</a>
+        <a href="events.html" class="active">Event</a>
+        <a href="products.html" class="link">Products</a>
+        <a href="services.html" class="link">Services and Repairs</a>
+        <a href="contact.html" class="link">Contact Us</a>
+    </div>
+
+  </nav>
+    
+ <main>
+  <section>
+    <h1>Cycle the Continental Divide!</h1>
+    <div class="event-intro">
+      <article>
+        <h2>Great Divide Mountain Bike Route</h2>
+          <img src="images/slide1.jpg" alt="Continetial Divide">
+        <h4>From Outside Bozeman.com</h4>
+        <p>The mountains outside of West Yellowstone contain some of the most scenic and enjoyable sections of the legendary Continental Divide Trail. From extremely technical rocky switchbacks to smooth rolling singletrack, the CDT has what you’re looking for, and depending on how much time you have to ride, it can be a short cruise or an all-day epic. Here are some recommended rides to tick off this fall before the snow starts coming down.
+
+Starting on Targhee Pass, there are two rides to choose from on the CDT. Targhee Pass is located on Hwy. 20, ten miles southwest of West Yellowstone. There’s a parking lot on the south side of Hwy 20. The less technical of the two rides starts on trail #116 near the parking lot. This trail meanders for 14 miles until it meets up to a dirt road, #478. At the junction, you can choose to take #478, which turns into Mosquito Gulch all the way back to West Yellowstone for another 11 miles, or turn around and ride the CDT #116 back to Targhee pass. If time is an issue, a short out-and-back from Targhee Pass is your best bet.
+
+The other ride starts from Targhee Pass is on the north side of Hwy 20. From the parking lot, ride across Hwy. 20 up a gradual dirt road #1790 for 1.5 miles. Turn left onto CDT trail #115. This trail gains elevation quickly and has sections of rocky singletrack with great views. #115 goes to the top of Lionhead Mountain, which is part of the Henry’s Lake Range. Continuing on the CDT, the trail descends to the junction of #215 and #217. Trail #217 goes north toward Coffin and Sheep mountains and #215 continues on the CDT. Trail #215 makes its way toward the base of Targhee Peak while meandering up and down near Clark Lake, and up a very rocky ascent to the highest point of the ride at 10,000 feet. The next section of the CDT has over 70 switchbacks. This dynamic section has breathtaking views of the Centennial Range.
+
+Most riders choose to ride #215 from Hwy. 87. Climbing up Mile Creek, #215, and descending to Lionhead #115 is an all-day adventure. There are several other loops and connectors in the Henry’s Lake Range. For more information, stop by Freeheel and Wheel for a map that details the Continental Divide Trail around West Yellowstone.</p>
+      </article>
+
+      <article class="event-details">
+        <h2>Event Information</h2>
+        <table>
+          <tr>
+            <td>Dates:</td>
+            <td>Next event starts on Monday, 11-June-2018 08:00 AM (MDT)</td>
+          </tr>
+          <tr>
+            <td>Cost:</td>
+            <td>Aproximate price is $5,500.00. Price may vary (depending on the kit).</td>
+          </tr>
+          
+        </table>
+      </article>
+    </div>
+  </section>
+  
+
+  <div>
+    <h2>Registration Form</h2>
+    <form action="thanks-for-registration.html">
+      <div id="eventRegistration">
+        <fieldset>  
+          <label>
+            <span>Full Name:</span>
+            <input 
+              type="text"
+              name="fullname"
+              value=""
+              placeholder="Full Name"
+              title="Please provide full name"
+              pattern="[a-zA-Z -._]{5,99}" required
+            >
+          </label>
+          <label>
+            <span>Email:</span>
+            <input 
+              type="email"
+              name="email"
+              value=""
+              placeholder="person@demo.com"
+              title="Please provide email address"
+              required
+            >
+          </label>
+          <label>
+            <span>Phone:</span>
+            <input 
+              type="tel"
+              name="phonenumber"
+              value=""
+              placeholder="0155512345"
+              title="Please provide phone number"
+              pattern="[0-9]{10,20}" 
+              required
+            >
+          </label>
+        </fieldset>    
+        <fieldset>
+          <label>
+            <span>Date of Birth:</span>
+            <input 
+              type="date"
+              name="dateOfBirth"
+              title="Please provide date of birth"
+              required
+            >
+          </label>
+          <label>
+            <span>Home State or Country:</span>
+            <input 
+              type="text"
+              name="state or country"
+              title="Please enter State or Country"
+              required
+            >
+          </label>
+          <label>
+            <span>Special Accomodations/Comments:</span>
+            <textarea 
+              name="comments"
+              cols="50"
+              rows="5"
+              placeholder="Please enter any additional information."
+            ></textarea>
+          </label>
+        </fieldset>
+      </div>
+      <div id="eventRegistrationSubmit">
+        <input type="submit" class="submitBtn" value="Submit Registration">
+        <input 
+          type="hidden"
+          value="Event Registration"
+          name="subject"
+        >
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+    <aside>
+        <div>The Mountain Spoke</div>
+        <div>999.999.9999</div>
+        <div>3950 Valley Commons Drive Bozeman, MT 59715</div>
+        <div><a href="https://goo.gl/maps/as26r2hyjoE2">Google Map</a></div>
+    </aside>
+    <div>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <a href="video-presentation.html">Video Presentation</a> | <a href="citedWorks.html">Cited Works</a></p>
+        </div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/gallery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "services" : [
+  {
+    "name": "Tune-UP",
+      "includes" : [
+      "Degreasing the bike",
+        "Lubricating cables, chains, freewheels",
+        "Adjusting gears",
+        "Adjusting brakes",
+        "Truing wheels",
+        "Checking spoke tension",
+        "Polishing the bike"
+    ],
+    "price": "$79.99"
+  }
+
+}
