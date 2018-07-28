@@ -1,17 +1,20 @@
-var requestURL = 'https://github.com/Wood-Benjamin/Wood-Benjamin.github.io/blob/master/assignments/Final%20Project/data/services.json';
+var requestURL = 'Wood-Benjamin.github.io/assignments/Final-Project/data/services.json';
 
 var servicesRequest = new XMLHttpRequest;
 servicesRequest.open('GET',requestURL);
+request.responseType = 'text';
 servicesRequest.send();
 
 servicesRequest.onload = function() {
-    var fr_servicesInfo = JSON.parse(servicesRequest.responseText);
+    var servicesText = servicesRequest.response;
+    var servicesInfo = JSON.parse(servicesText);
     console.log(fr_servicesInfo);
     
     // service name
-    document.getElementById('name').innerHTML = fr_servicesInfo.name;
+    
+    document.getElementById('name').innerHTML = servicesInfo.name;
     
     //  service description
-    document.getElementById('includes').innerHTML = fr_servicesInfo.includes;
+    document.getElementById('includes').innerHTML = servicesInfo.includes;
     //  service price
-    document.getElementById('price').innerHTML = fr_servicesInfo.price;
+    document.getElementById('price').innerHTML = servicesInfo.price;

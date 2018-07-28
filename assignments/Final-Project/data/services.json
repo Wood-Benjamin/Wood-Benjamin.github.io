@@ -1,6 +1,7 @@
 {
   
-    "name": "Tune-UP",
+    "name" : "Tune-UP",
+    "price" : "$79.99",
       "includes" : [
       "Degreasing the bike",
         "Lubricating cables, chains, freewheels",
@@ -9,8 +10,8 @@
         "Truing wheels",
         "Checking spoke tension",
         "Polishing the bike"
-    ],
-    "price": "$79.99"
+    ]
+    
   
 
 }
