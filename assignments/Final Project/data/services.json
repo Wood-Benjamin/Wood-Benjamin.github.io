@@ -1,6 +1,5 @@
 {
-  "services" : [
-  {
+  
     "name": "Tune-UP",
       "includes" : [
       "Degreasing the bike",
@@ -12,6 +11,6 @@
         "Polishing the bike"
     ],
     "price": "$79.99"
-  }
+  
 
 }

@@ -1,5 +1,7 @@
+var requestURL = 'https://github.com/Wood-Benjamin/Wood-Benjamin.github.io/blob/master/assignments/Final%20Project/data/services.json';
+
 var servicesRequest = new XMLHttpRequest;
-servicesRequest.open('GET','/data/service.json',true);
+servicesRequest.open('GET',requestURL);
 servicesRequest.send();
 
 servicesRequest.onload = function() {
