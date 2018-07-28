@@ -18,3 +18,4 @@ servicesRequest.onload = function() {
     document.getElementById('includes').innerHTML = servicesInfo.includes;
     //  service price
     document.getElementById('price').innerHTML = servicesInfo.price;
+}
