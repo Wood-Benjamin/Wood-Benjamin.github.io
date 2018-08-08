@@ -329,7 +329,7 @@ img {vertical-align: middle;}
     background-color: #ccc;
 }
 
-.accordion .active:after {
+.active .accordion:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /* Style the accordion panel. Note: hidden by default */
